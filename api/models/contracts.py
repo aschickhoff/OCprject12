@@ -20,5 +20,4 @@ class Contract(models.Model):
     payment_due = models.DateField(blank=True, null=True)
 
     def __str__(self):
-        return (f"Contract# {self.contract_id}: {self.client.first_name} {self.client.last_name} "
-                f"- {self.client.company_name}")
+        return (f"Contract# {self.contract_id}")

@@ -6,7 +6,7 @@ class ContractSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contract
         fields = "__all__"
-        read_only_fields = ["contract_id", "client", "date_created", "date_updated"]
+        read_only_fields = ["contract_id", "date_created", "date_updated"]
 
     def create(self, validated_data):
         contract = Contract.objects.create(**validated_data)

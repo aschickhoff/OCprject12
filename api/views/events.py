@@ -10,7 +10,9 @@ class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all()
 
     def get_queryset(self, *args, **kwargs):
-        print(f" Args: {self.args}")
-        print(f" Kwargs: {self.kwargs}")
-        if self.request.user.position == "SUPPORT":
-            return Event.objects.all()  # ToDo: only return events that I support
+        if self.request.user.position == "MANAGEMENT":
+            return Event.objects.all()
+        elif self.request.user.position == "SALES":
+            return Event.objects.filter(contract__sales_contact=self.request.user)
+        elif self.request.user.position == "SUPPORT":
+            return Event.objects.filter(support_contact=self.request.user)

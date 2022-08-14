@@ -52,13 +52,18 @@ class ContractAdmin(admin.ModelAdmin):
             return super(ContractAdmin, self).render_change_form(
                 request, context, *args, **kwargs
             )
+        return super(ContractAdmin, self).render_change_form(
+            request, context, *args, **kwargs
+        )
 
     def get_queryset(self, request):
         instance = super(ContractAdmin, self).get_queryset(request)
         if request.user.position == "MANAGEMENT":
             return instance.all()
-        if request.user.position == "SALES":
+        elif request.user.position == "SALES":
             return instance.filter(sales_contact=request.user)
+        elif request.user.position == "SUPPORT":
+            return instance.filter(event__support_contact=request.user)
 
     def has_module_permission(self, request):
         return True
@@ -96,6 +101,8 @@ class ContractAdmin(admin.ModelAdmin):
         elif request.user.position == "MANAGEMENT":
             return True
         elif request.user.position == "SALES":
+            return True
+        elif request.user.position == "SUPPORT":
             return True
         else:
             return False
