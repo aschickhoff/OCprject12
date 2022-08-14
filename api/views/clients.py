@@ -1,5 +1,6 @@
 from api.models import Client
 from api.serializers import ClientSerializer
+from django_filters.rest_framework import DjangoFilterBackend
 from EpicEvents.permissions import IsSales
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
@@ -8,6 +9,8 @@ from rest_framework import viewsets
 class ClientViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated, IsSales]
     serializer_class = ClientSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ["first_name", "last_name", "email"]
     queryset = Client.objects.all()
 
     def get_queryset(self, *args, **kwargs):

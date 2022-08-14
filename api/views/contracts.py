@@ -1,5 +1,6 @@
 from api.models import Contract
 from api.serializers import ContractSerializer
+from django_filters.rest_framework import DjangoFilterBackend
 from EpicEvents.permissions import IsSales
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
@@ -8,12 +9,16 @@ from rest_framework import viewsets
 class ContractViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated, IsSales]
     serializer_class = ContractSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = [
+        "client__first_name",
+        "client__last_name",
+        "client__email",
+        "date_created",
+        "date_updated",
+        "amount",
+    ]
     queryset = Contract.objects.all()
-
-    # def perform_create(self, request, *args, **kwargs):
-    #     client = Client.objects.get(pk=self.kwargs["client_pk"])
-    #     if self.request.user.position == "SALES":
-    #         contract = request.save(client=client)
 
     def get_queryset(self, *args, **kwargs):
         if self.request.user.position == "MANAGEMENT":
