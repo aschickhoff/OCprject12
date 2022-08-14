@@ -68,7 +68,7 @@ class EventAdmin(admin.ModelAdmin):
                 sales_contact=request.user
             )
             form.base_fields["contract"].queryset = Contract.objects.filter(
-                sales_contact=request.user
+                clients__sales_contact=request.user
             )
         return form
 

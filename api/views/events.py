@@ -1,11 +1,12 @@
 from api.models import Event
 from api.serializers import EventSerializer
+from EpicEvents.permissions import IsSales
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
 
 
 class EventViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsSales]
     serializer_class = EventSerializer
     queryset = Event.objects.all()
 
