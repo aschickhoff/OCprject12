@@ -1,11 +1,12 @@
-from api.models import Contract, Client
+from api.models import Contract
 from api.serializers import ContractSerializer
+from EpicEvents.permissions import IsSales
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
 
 
 class ContractViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsSales]
     serializer_class = ContractSerializer
     queryset = Contract.objects.all()
 
@@ -15,14 +16,9 @@ class ContractViewSet(viewsets.ModelViewSet):
     #         contract = request.save(client=client)
 
     def get_queryset(self, *args, **kwargs):
-        print(f" Args: {self.args}")
-        print(f" Kwargs: {self.kwargs}")
-        if self.request.user.position != "SUPPORT":
-            return (
-                Contract.objects.all()
-            )  # ToDo: only return contracts from that client
-        #  otherwise show contracts from events that I support
-
-
-# when creating a contract the sales_contact for the client needs to be updated automatically
-# when creating a contract the client needs to be assigned automatically
+        if self.request.user.position == "MANAGEMENT":
+            return Contract.objects.all()
+        elif self.request.user.position == "SALES":
+            return Contract.objects.filter(sales_contact=self.request.user)
+        elif self.request.user.position == "SUPPORT":
+            return Contract.objects.filter(event__support_contact=self.request.user)

@@ -1,4 +1,6 @@
 from django.db import models
+
+from .contracts import Contract
 from .clients import Client
 from .users import POS_CHOICES, User
 from .eventstatus import EventStatus
@@ -22,6 +24,7 @@ class Event(models.Model):
     attendees = models.IntegerField(blank=True, null=True)
     event_date = models.DateTimeField(blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
+    contract = models.OneToOneField(Contract, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"Event#{self.event_id}: {self.event_date} - {self.client.first_name} {self.client.last_name}"

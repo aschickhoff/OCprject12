@@ -1,5 +1,5 @@
 from django.contrib import admin
-from api.models import Event, Contract
+from api.models import Event, Contract, Client
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
@@ -7,7 +7,16 @@ from django.utils.decorators import method_decorator
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
     fieldsets = (
-        ("Event", {"fields": ("client", "attendees")}),
+        (
+            "Event",
+            {
+                "fields": (
+                    "client",
+                    "contract",
+                    "attendees",
+                )
+            },
+        ),
         ("Support agent", {"fields": ("support_contact",)}),
         ("Date", {"fields": ("event_date",)}),
         ("Notes", {"fields": ("notes",)}),
@@ -55,7 +64,10 @@ class EventAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, change=False, **kwargs):
         form = super(EventAdmin, self).get_form(request, obj, **kwargs)
         if request.user.position == "SALES":
-            form.base_fields["client"].queryset = Contract.objects.filter(
+            form.base_fields["client"].queryset = Client.objects.filter(
+                sales_contact=request.user
+            )
+            form.base_fields["contract"].queryset = Contract.objects.filter(
                 sales_contact=request.user
             )
         return form
