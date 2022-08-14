@@ -69,17 +69,3 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
-
-
-# POS_CHOICES = (("SALES", "Sales"), ("SUPPORT", "Support"), ("MANAGEMENT", "Management"))
-
-
-# class User(AbstractUser):
-#     first_name = models.CharField(max_length=25)
-#     last_name = models.CharField(max_length=25)
-#     email = models.CharField(max_length=100, blank=True, null=True)
-#     position = models.CharField(choices=POS_CHOICES, default="SUPPORT", max_length=10)
-#     is_staff = models.BooleanField(default=True)
-
-#     def __str__(self):
-#         return f"{self.first_name} {self.last_name}"

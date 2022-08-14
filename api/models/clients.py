@@ -8,7 +8,7 @@ class Client(models.Model):
     client_id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=25)
-    email = models.CharField(max_length=100, blank=True, null=True)
+    email = models.CharField(max_length=100)
     phone = models.CharField(max_length=25, blank=True, null=True)
     mobile = models.CharField(max_length=25, blank=True, null=True)
     company_name = models.CharField(max_length=250)

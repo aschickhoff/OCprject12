@@ -11,8 +11,6 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
 
     def get_queryset(self, *args, **kwargs):
-        print(f" Args: {self.args}")
-        print(f" Kwargs: {self.kwargs}")
         management = User.objects.filter(position="MANAGEMENT")
         if self.request.user in management.all():
             return User.objects.all()

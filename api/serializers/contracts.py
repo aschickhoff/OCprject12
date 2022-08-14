@@ -9,7 +9,6 @@ class ContractSerializer(serializers.ModelSerializer):
         read_only_fields = ["contract_id", "client", "date_created", "date_updated"]
 
     def create(self, validated_data):
-        print(f" validated_data: {self.validated_data}")
         contract = Contract.objects.create(**validated_data)
         contract.sales_contact = self.context["request"].user
         # contract.client = self.context["request"].client
