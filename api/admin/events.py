@@ -24,9 +24,10 @@ class EventAdmin(admin.ModelAdmin):
     list_filter = ("support_contact", "event_status")
     ordering = ("event_date",)
     search_fields = (
-        "event_id",
-        "client",
-        "support_contact",
+        "client__first_name",
+        "client__last_name",
+        "client__email",
+        "event_date",
     )
     list_display_links = (
         "event_id",

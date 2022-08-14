@@ -19,15 +19,18 @@ class ContractAdmin(admin.ModelAdmin):
         "amount",
         "payment_due",
         "status",
+        "date_created",
+        "date_updated",
     )
     list_filter = ("sales_contact", "status")
     ordering = ("contract_id",)
     readonly_fields = ("date_created", "date_updated")
     search_fields = (
-        "contract_id",
-        "client",
-        "sales_contact",
-        "payment_due",
+        "client__first_name",
+        "client__last_name",
+        "client__email",
+        "date_updated",
+        "amount",
     )
 
     def get_form(self, request, obj=None, **kwargs):

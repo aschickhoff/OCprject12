@@ -34,15 +34,13 @@ class ClientAdmin(admin.ModelAdmin):
         "sales_contact",
         "client_status",
     )
-    list_filter = ("sales_contact",)
+    list_filter = ("client_status",)
     ordering = ("company_name",)
     readonly_fields = ("date_created", "date_updated")
     search_fields = (
         "last_name",
         "first_name",
         "email",
-        "phone",
-        "mobile",
         "company_name",
     )
 

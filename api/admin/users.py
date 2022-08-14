@@ -59,6 +59,19 @@ class UserAdminConfig(UserAdmin):
         ),
     )
 
+    def get_readonly_fields(self, request, obj=None):
+        if request.user.position == "SUPPORT":
+            return (
+                "username",
+                "first_name",
+                "last_name",
+                "email",
+                "position",
+                "is_staff",
+                "is_active",
+            )
+        return super(UserAdminConfig, self).get_readonly_fields(request, obj=obj)
+
     def has_module_permission(self, request):
         return True
 
@@ -77,6 +90,8 @@ class UserAdminConfig(UserAdmin):
             return True
         elif request.user.position == "MANAGEMENT":
             return True
+        # elif request.user.position == "SUPPORT":
+        #     return True
         else:
             return False
 
@@ -95,18 +110,19 @@ class UserAdminConfig(UserAdmin):
             return True
         elif request.user.position == "MANAGEMENT":
             return True
+        # elif request.user.position == "SUPPORT":
+        #     return True
         else:
             return False
 
-    # list_filter = ("position",)
-    # ordering = ("position",)
-    # search_fields = (
-    #     "user_name",
-    #     "last_name",
-    #     "first_name",
-    #     "email",
-    #     "position",
-    # )
+    def get_queryset(self, request):
+        instance = super(UserAdminConfig, self).get_queryset(request)
+        if request.user.position == "MANAGEMENT":
+            return instance.all()
+        # if request.user.position == "SALES":
+        #     return instance.filter(sales_contact=request.user)
+        if request.user.position == "SUPPORT":
+            return instance.filter(event__support_contact=request.user)
 
 
 admin.site.register(User, UserAdminConfig)
