@@ -41,7 +41,7 @@ class ContractAdmin(admin.ModelAdmin):
 
     def get_fieldsets(self, request, obj=None):
         if request.user.position == "MANAGEMENT" and self.management_fieldset:
-            return (self.fieldsets or tuple()) + self.management_fieldset
+            return self.fieldsets + self.management_fieldset
         elif request.user.position == "SALES" and self.sales_fieldset:
             return (self.fieldsets or tuple()) + self.sales_fieldset
         return super(ContractAdmin, self).get_fieldsets(request, obj)
@@ -53,12 +53,12 @@ class ContractAdmin(admin.ModelAdmin):
             form.base_fields["sales_contact"].disabled = True
         return form
 
-    def render_change_form(self, request, context, *args, **kwargs):
+    def render_change_form(self, request, context, obj=None, *args, **kwargs):
         if request.user.position == "MANAGEMENT":
             return super(ContractAdmin, self).render_change_form(
                 request, context, *args, **kwargs
             )
-        elif request.user.position == "SALES":
+        elif request.user.position == "SALES" and obj is None:
             context["adminform"].form.fields["client"].queryset = Client.objects.filter(
                 sales_contact=request.user
             )
@@ -68,6 +68,16 @@ class ContractAdmin(admin.ModelAdmin):
         return super(ContractAdmin, self).render_change_form(
             request, context, *args, **kwargs
         )
+
+    def get_readonly_fields(self, request, obj=None):
+        if request.user.position == "SALES":
+            if obj:
+                return self.readonly_fields + (
+                    "client",
+                    "payment_due",
+                    "amount",
+                )
+        return super(ContractAdmin, self).get_readonly_fields(request, obj=obj)
 
     def get_queryset(self, request):
         instance = super(ContractAdmin, self).get_queryset(request)
