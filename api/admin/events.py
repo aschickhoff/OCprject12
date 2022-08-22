@@ -71,11 +71,6 @@ class EventAdmin(admin.ModelAdmin):
             my_clients = Client.objects.filter(sales_contact=request.user)
             contracts_signed = my_clients.filter(contract__status=1)
             form.base_fields["client"].queryset = contracts_signed
-            # form.base_fields["client"].queryset = Client.objects.filter(
-            #     sales_contact=request.user
-            # )
-            # form.base_fields["contract"].queryset = Contract.objects.filter(
-            #     client__sales_contact=request.user)
             clients = Contract.objects.filter(client__sales_contact=request.user)
             form.base_fields["contract"].queryset = clients.filter(status=1)
         return form
@@ -84,13 +79,9 @@ class EventAdmin(admin.ModelAdmin):
         instance = super(EventAdmin, self).get_queryset(request)
         if request.user.position == "MANAGEMENT":
             return instance.all()
-        if request.user.position == "SALES":
+        elif request.user.position == "SALES":
             return instance.filter(client__sales_contact=request.user)
-        # if request.user.position == "SUPPORT":
-        #     return instance.filter(support_contact=request.user) & instance.exclude(
-        #         event_status=7
-        #     )  # 7 is closed
-        if request.user.position == "SUPPORT":
+        elif request.user.position == "SUPPORT":
             return instance.filter(support_contact=request.user)
 
     def has_module_permission(self, request):
