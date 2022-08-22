@@ -43,7 +43,7 @@ class ContractAdmin(admin.ModelAdmin):
         if request.user.position == "MANAGEMENT" and self.management_fieldset:
             return self.fieldsets + self.management_fieldset
         elif request.user.position == "SALES" and self.sales_fieldset:
-            return (self.fieldsets or tuple()) + self.sales_fieldset
+            return self.fieldsets + self.sales_fieldset
         return super(ContractAdmin, self).get_fieldsets(request, obj)
 
     def get_form(self, request, obj=None, **kwargs):
