@@ -62,18 +62,7 @@ class EventAdmin(admin.ModelAdmin):
         if request.user.position == "SALES":
             return "support_contact"
         if request.user.position == "SUPPORT":
-            return ("client", "support_contact")
-            # if str(obj.event_status) != "Closed":
-            #     return ("client", "support_contact")
-            # else:
-            #     return (
-            #         "client",
-            #         "attendees",
-            #         "event_date",
-            #         "support_contact",
-            #         "notes",
-            #         "event_status",
-            #     )
+            return ("client", "contract", "support_contact")
         return super(EventAdmin, self).get_readonly_fields(request, obj=obj)
 
     def get_form(self, request, obj=None, change=False, **kwargs):

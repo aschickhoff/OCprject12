@@ -7,6 +7,7 @@ from django.utils.decorators import method_decorator
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
     management_fieldset = (("Sales agent", {"fields": ("sales_contact",)}),)
+    sales_fieldset = (("Sales agent", {"fields": ("sales_contact",)}),)
     fieldsets = (
         (
             "Client",
@@ -47,6 +48,8 @@ class ClientAdmin(admin.ModelAdmin):
     def get_fieldsets(self, request, obj=None):
         if request.user.position == "MANAGEMENT" and self.management_fieldset:
             return (self.fieldsets or tuple()) + self.management_fieldset
+        elif request.user.position == "SALES" and self.sales_fieldset:
+            return (self.fieldsets or tuple()) + self.sales_fieldset
         return super(ClientAdmin, self).get_fieldsets(request, obj)
 
     def get_form(self, request, obj=None, **kwargs):
