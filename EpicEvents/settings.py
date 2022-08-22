@@ -178,7 +178,7 @@ LOGGING = {
         "django.request": {
             "handlers": ["file"],
             "level": "ERROR",
-            "propagate": False,
+            "propagate": True,
         },
     },
 }

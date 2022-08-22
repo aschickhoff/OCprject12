@@ -111,7 +111,7 @@ class UserAdminConfig(UserAdmin):
         elif request.user.position == "MANAGEMENT":
             return True
         # elif request.user.position == "SUPPORT":
-        #     return True
+        #     return False
         else:
             return False
 

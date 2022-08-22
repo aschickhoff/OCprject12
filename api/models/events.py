@@ -1,5 +1,4 @@
 from django.db import models
-
 from .contracts import Contract
 from .clients import Client
 from .users import POS_CHOICES, User

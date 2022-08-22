@@ -35,15 +35,3 @@ class IsSales(permissions.BasePermission):
             return request.method in ["GET", "PATCH"]
         else:
             return request.method == "GET"
-
-
-class IsClientSalesContact(permissions.BasePermission):
-    message = "You need to be the sales contact person of the client!"
-
-
-class IsSupport(permissions.BasePermission):
-    message = "You need to be a member of the support team!"
-
-
-class IsClientSupportContact(permissions.BasePermission):
-    message = "You need to be the support contact person of the client!"

@@ -64,12 +64,16 @@ class EventAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, change=False, **kwargs):
         form = super(EventAdmin, self).get_form(request, obj, **kwargs)
         if request.user.position == "SALES":
-            form.base_fields["client"].queryset = Client.objects.filter(
-                sales_contact=request.user
-            )
-            form.base_fields["contract"].queryset = Contract.objects.filter(
-                clients__sales_contact=request.user
-            )
+            my_clients = Client.objects.filter(sales_contact=request.user)
+            contracts_signed = my_clients.filter(contract__status=1)
+            form.base_fields["client"].queryset = contracts_signed
+            # form.base_fields["client"].queryset = Client.objects.filter(
+            #     sales_contact=request.user
+            # )
+            # form.base_fields["contract"].queryset = Contract.objects.filter(
+            #     client__sales_contact=request.user)
+            clients = Contract.objects.filter(client__sales_contact=request.user)
+            form.base_fields["contract"].queryset = clients.filter(status=1)
         return form
 
     def get_queryset(self, request):
