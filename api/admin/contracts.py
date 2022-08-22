@@ -30,6 +30,7 @@ class ContractAdmin(admin.ModelAdmin):
         "client__first_name",
         "client__last_name",
         "client__email",
+        "date_created",
         "date_updated",
         "amount",
     )
