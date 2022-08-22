@@ -6,6 +6,12 @@ from django.utils.decorators import method_decorator
 
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
+    management_fieldset = (
+        ("Support agent", {"fields": ("support_contact",)}),
+        ("Status", {"fields": ("event_status",)}),
+    )
+    support_fieldset = (("Status", {"fields": ("event_status",)}),)
+
     fieldsets = (
         (
             "Event",
@@ -17,10 +23,8 @@ class EventAdmin(admin.ModelAdmin):
                 )
             },
         ),
-        ("Support agent", {"fields": ("support_contact",)}),
         ("Date", {"fields": ("event_date",)}),
         ("Notes", {"fields": ("notes",)}),
-        ("Status", {"fields": ("event_status",)}),
     )
     list_display = (
         "event_id",
@@ -42,6 +46,17 @@ class EventAdmin(admin.ModelAdmin):
         "event_id",
         "client",
     )
+
+    def get_fieldsets(self, request, obj=None):
+        if request.user.position == "MANAGEMENT" and self.management_fieldset:
+            return (self.fieldsets or tuple()) + self.management_fieldset
+        elif (
+            request.user.position == "SUPPORT"
+            and str(obj.event_status) != "Closed"
+            and self.support_fieldset
+        ):
+            return (self.fieldsets or tuple()) + self.support_fieldset
+        return super(EventAdmin, self).get_fieldsets(request, obj)
 
     def get_readonly_fields(self, request, obj=None):
         if request.user.position == "SALES":

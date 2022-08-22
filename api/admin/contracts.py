@@ -6,9 +6,9 @@ from django.utils.decorators import method_decorator
 
 @admin.register(Contract)
 class ContractAdmin(admin.ModelAdmin):
+    management_fieldset = (("Sales agent", {"fields": ("sales_contact",)}),)
     fieldsets = (
         ("Contract", {"fields": ("client",)}),
-        ("Sales agent", {"fields": ("sales_contact",)}),
         ("Date", {"fields": ("date_created", "date_updated")}),
         ("Payment", {"fields": ("amount", "payment_due", "status")}),
     )
@@ -32,6 +32,15 @@ class ContractAdmin(admin.ModelAdmin):
         "date_updated",
         "amount",
     )
+    list_display_links = (
+        "contract_id",
+        "client",
+    )
+    
+    def get_fieldsets(self, request, obj=None):
+        if request.user.position == "MANAGEMENT" and self.management_fieldset:
+            return (self.fieldsets or tuple()) + self.management_fieldset
+        return super(ContractAdmin, self).get_fieldsets(request, obj)
 
     def get_form(self, request, obj=None, **kwargs):
         form = super(ContractAdmin, self).get_form(request, obj, **kwargs)

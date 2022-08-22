@@ -2874,3 +2874,997 @@ Traceback (most recent call last):
     arg, value = filter_expr
 ValueError: too many values to unpack (expected 2)
 ERROR "GET /contracts/?amount__lte=500.0 HTTP/1.1" 500 130557
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR "GET /admin/api/user/19/change/ HTTP/1.1" 500 110004
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR "GET /admin/api/user/19/change/ HTTP/1.1" 500 110004
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR "GET /admin/api/user/19/change/ HTTP/1.1" 500 110004
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR "GET /admin/api/user/19/change/ HTTP/1.1" 500 110004
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 53, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 53, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 111045
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 53, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 53, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 111183
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 53, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 53, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 111046
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 55, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 55, in get_fieldsets
+    fields.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 111104
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 55, in get_fieldsets
+    fieldsets.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 55, in get_fieldsets
+    fieldsets.remove(field)
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 111116
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 66, in get_fieldsets
+    x for x in fieldsets[1][0]["fields"] if x not in fields_to_remove
+TypeError: string indices must be integers
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 66, in get_fieldsets
+    x for x in fieldsets[1][0]["fields"] if x not in fields_to_remove
+TypeError: string indices must be integers
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 110896
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 66, in get_fieldsets
+    x for x in fieldsets[1][0]["fields"] if x not in fields_to_remove
+TypeError: string indices must be integers
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 66, in get_fieldsets
+    x for x in fieldsets[1][0]["fields"] if x not in fields_to_remove
+TypeError: string indices must be integers
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 110896
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 66, in get_fieldsets
+    x for x in fieldsets[1][0]["fields"] if x not in fields_to_remove
+TypeError: string indices must be integers
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 66, in get_fieldsets
+    x for x in fieldsets[1][0]["fields"] if x not in fields_to_remove
+TypeError: string indices must be integers
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 110759
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove("support_contact")
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove("support_contact")
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 110680
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 858, in get_object
+    model = queryset.model
+AttributeError: 'NoneType' object has no attribute 'model'
+ERROR "GET /admin/api/user/19/change/ HTTP/1.1" 500 110003
+ERROR Internal Server Error: /admin/api/event/5/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove("Support agent")
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/5/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove("Support agent")
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/5/change/ HTTP/1.1" 500 110782
+ERROR Internal Server Error: /admin/api/event/5/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove(
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/5/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove(
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/5/change/ HTTP/1.1" 500 110683
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove(
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR Internal Server Error: /admin/api/event/11/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1785, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "P:\projects\OCproject12\api\admin\events.py", line 61, in get_fieldsets
+    fieldsets.remove(
+AttributeError: 'tuple' object has no attribute 'remove'
+ERROR "GET /admin/api/event/11/change/ HTTP/1.1" 500 110577
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 864, in get_object
+    return queryset.get(**{field.name: object_id})
+  File "P:\projects\OCproject12\env\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+api.models.users.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+ERROR Internal Server Error: /admin/api/user/19/change/
+Traceback (most recent call last):
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 1773, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "P:\projects\OCproject12\env\lib\site-packages\django\contrib\admin\options.py", line 864, in get_object
+    return queryset.get(**{field.name: object_id})
+  File "P:\projects\OCproject12\env\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+api.models.users.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+ERROR "GET /admin/api/user/19/change/ HTTP/1.1" 500 114971

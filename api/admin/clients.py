@@ -6,6 +6,7 @@ from django.utils.decorators import method_decorator
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
+    management_fieldset = (("Sales agent", {"fields": ("sales_contact",)}),)
     fieldsets = (
         (
             "Client",
@@ -20,7 +21,6 @@ class ClientAdmin(admin.ModelAdmin):
                 )
             },
         ),
-        ("Sales agent", {"fields": ("sales_contact",)}),
         ("Client status", {"fields": ("client_status",)}),
         ("Date", {"fields": ("date_created", "date_updated")}),
     )
@@ -43,6 +43,11 @@ class ClientAdmin(admin.ModelAdmin):
         "email",
         "company_name",
     )
+
+    def get_fieldsets(self, request, obj=None):
+        if request.user.position == "MANAGEMENT" and self.management_fieldset:
+            return (self.fieldsets or tuple()) + self.management_fieldset
+        return super(ClientAdmin, self).get_fieldsets(request, obj)
 
     def get_form(self, request, obj=None, **kwargs):
         form = super(ClientAdmin, self).get_form(request, obj, **kwargs)
