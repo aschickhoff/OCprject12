@@ -90,8 +90,6 @@ class UserAdminConfig(UserAdmin):
             return True
         elif request.user.position == "MANAGEMENT":
             return True
-        # elif request.user.position == "SUPPORT":
-        #     return True
         else:
             return False
 
@@ -110,8 +108,6 @@ class UserAdminConfig(UserAdmin):
             return True
         elif request.user.position == "MANAGEMENT":
             return True
-        # elif request.user.position == "SUPPORT":
-        #     return False
         else:
             return False
 
